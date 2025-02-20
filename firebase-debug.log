@@ -1,0 +1,60 @@
+[debug] [2025-02-20T10:37:49.014Z] ----------------------------------------------------------------------
+[debug] [2025-02-20T10:37:49.015Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Théo\Documents\code\poc-form\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-02-20T10:37:49.016Z] CLI Version:   13.31.2
+[debug] [2025-02-20T10:37:49.016Z] Platform:      win32
+[debug] [2025-02-20T10:37:49.016Z] Node Version:  v22.2.0
+[debug] [2025-02-20T10:37:49.016Z] Time:          Thu Feb 20 2025 11:37:49 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2025-02-20T10:37:49.016Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-20T10:37:49.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-20T10:37:49.115Z] > authorizing via signed-in user (GotchiT@outlook.fr)
+[debug] [2025-02-20T10:37:49.115Z] [iam] checking project cgt-form-test for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-20T10:37:49.115Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:49.115Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:49.116Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cgt-form-test:testIamPermissions [none]
+[debug] [2025-02-20T10:37:49.116Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cgt-form-test:testIamPermissions x-goog-quota-user=projects/cgt-form-test
+[debug] [2025-02-20T10:37:49.116Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cgt-form-test:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-20T10:37:49.762Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cgt-form-test:testIamPermissions 200
+[debug] [2025-02-20T10:37:49.762Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cgt-form-test:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-20T10:37:49.762Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:49.762Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:49.763Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test [none]
+[debug] [2025-02-20T10:37:49.986Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test 200
+[debug] [2025-02-20T10:37:49.986Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test {"projectId":"cgt-form-test","projectNumber":"743835225196","displayName":"cgt-form-test","name":"projects/cgt-form-test","resources":{"hostingSite":"cgt-form-test"},"state":"ACTIVE","etag":"1_1e18b64b-e8ba-4421-ad76-336d99d40b66"}
+[debug] [2025-02-20T10:37:51.854Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:51.854Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:51.855Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites pageToken=&pageSize=10
+[debug] [2025-02-20T10:37:52.668Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites 200
+[debug] [2025-02-20T10:37:52.668Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites {"sites":[{"name":"projects/cgt-form-test/sites/cgt-form-test","defaultUrl":"https://cgt-form-test.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-02-20T10:37:52.669Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:52.669Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:52.669Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites 
+[debug] [2025-02-20T10:37:52.913Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites 200
+[debug] [2025-02-20T10:37:52.913Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cgt-form-test/sites {"sites":[{"name":"projects/cgt-form-test/sites/cgt-form-test","defaultUrl":"https://cgt-form-test.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-02-20T10:37:52.913Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:52.913Z] Checked if tokens are valid: true, expires at: 1740051255147
+[debug] [2025-02-20T10:37:52.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test/webApps/-/config [none]
+[debug] [2025-02-20T10:37:53.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test/webApps/-/config 200
+[debug] [2025-02-20T10:37:53.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cgt-form-test/webApps/-/config {"projectId":"cgt-form-test","appId":"1:743835225196:web:312695da9e594f9ebb5c49","storageBucket":"cgt-form-test.firebasestorage.app","apiKey":"AIzaSyBPMlry9FFRLV8TWPdOUsAbUNGPYmq5fvE","authDomain":"cgt-form-test.firebaseapp.com","messagingSenderId":"743835225196","measurementId":"G-MSGBB0J89F"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+   The integration is known to work with Vite version 3 - 5. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[warn] !  This integration expects Node version 16, 18, or 20. You're running version 22, problems may be encountered. 
+[debug] [2025-02-20T10:38:17.014Z] Error: Command failed: npm i --omit dev --no-audit
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:889:11)
+    at execSync (node:child_process:961:15)
+    at prepareFrameworks (C:\Users\Théo\Documents\code\poc-form\node_modules\firebase-tools\lib\frameworks\index.js:371:42)
+    at async deploy (C:\Users\Théo\Documents\code\poc-form\node_modules\firebase-tools\lib\deploy\index.js:58:13)
+[error] 
+[error] Error: An unexpected error has occurred.
